@@ -15,3 +15,6 @@ function page2(){
 function page3(){
     $("#main").load("page3.html");
 }
+function quiz(){
+    $("#main").load("quiz.html");
+}
