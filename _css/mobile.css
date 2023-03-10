@@ -43,8 +43,12 @@ footer > ul{
 
 }
 .nav-icon{
+    
     display: block;
-    padding-right: 1em;
+    margin-right: 1em;
+}
+.nav-icon:hover{
+    box-shadow: 0.1em 0.1em rgb(88, 77, 77);
 }
 .nav-icon:visited {
 
