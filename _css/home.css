@@ -17,10 +17,3 @@ html{
     height: auto;
     width: 100%;
 }
-#contact{
-    position: fixed;
-    right: 0;
-    bottom: 0.01;
-    width: 4em;
-    height: 4em;
-}

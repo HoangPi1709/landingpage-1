@@ -289,6 +289,14 @@ footer > ul{
     height: 3em;
     padding-left: 2em;
 }
+#contact{
+    position: fixed;
+    right: 0;
+    bottom: 0.1;
+    width: 4em;
+    height: 4em;
+}
+
 #contact-form-1{
     display: flex;
     width: 100%;
@@ -307,4 +315,7 @@ footer > ul{
     padding-right: 1.5em;
     padding-bottom: 2em;
     text-align: center;
+}
+.sec4-list-img2{
+    display: none;
 }
