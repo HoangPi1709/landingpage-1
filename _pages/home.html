@@ -1,7 +1,7 @@
 <div id="main">
     <div id="main-img"></div>
-    <a href="#sec7"><img id="contact"  src="/_assets/banner-liên hệ-position.png" alt=""></a>
-    
+    <a href="#sec7"><img id="contact" src="/_assets/banner-liên hệ-position.png" alt=""></a>
+
     <div id="form">
         <div id="form-sec">
             <h2>Đăng ký để nhận những thông tin mới nhất!</h2>
@@ -33,13 +33,14 @@
     </div>
     <div id="sec2">
         <div id="sec-img">
-            <img src="/_assets/image 5.png" alt="">
+            <img id="changeIMG" src="/_assets/image-yellow.png" alt="">
             <ul class="list-circle-btn">
-                <li class="circle-btn"><a href="#"></a></li>
-                <li class="circle-btn"><a href="#"></a></li>
-                <li class="circle-btn"><a href="#"></a></li>
-                <li class="circle-btn"><a href="#"></a></li>
-                <li class="circle-btn"><a href="#"></a></li>
+
+                <li class="circle-btn" onclick="changeYellow()"><a href="#"></a></li>
+                <li class="circle-btn" onclick="changeRed()"><a href="#"></a></li>
+                <li class="circle-btn" onclick="changeWhite()"><a href="#"></a></li>
+                <li class="circle-btn" onclick="changeGray()"><a href="#"></a></li>
+                <li class="circle-btn" onclick="changeBlack()"><a href="#"></a></li>
             </ul>
         </div>
         <div class="sec-content">
@@ -87,12 +88,12 @@
         <div id="sec-main">
             <button>
                 < </button>
-                    
+
                     <div class="sec4-list-img">
                         <img src="/_assets/image4.png" alt="">
                         <div class="sec4-list-img2">
                             <img src="/_assets/image41.png" alt="">
-                        <img src="/_assets/image42.png" alt="">
+                            <img src="/_assets/image42.png" alt="">
                         </div>
                     </div>
                     <button> > </button>
@@ -137,11 +138,15 @@
     <div id="sec6">
         <div class="sec6-content">
             <h3 class="para" class="para-title">HƠN CẢ VẬN HÀNH</h3>
-        <p class="para">Khám phá trải nghiệm lái mới với động cơ 1.5L và hộp số vô cấp CVT sản sinh công suất cực đại
-            112Hp và Momen xoắn cực đại 150Nm. Kỹ thuật mới đã được cải tiến để tăng cường khoảng sáng gầm xe và kích
-            thước thân xe, mang đến sức sống mạnh mẽ và phong cách thể thao cho chiếc MG5. Vô lăng 3 chế độ trợ lực lái
-            và bảng điều khiển được thiết kế sao cho phù hợp nhất để người lái được trải nghiệm trọn vẹn cảm giác lái
-            thể thao đích thực.</p>
+            <p class="para">Khám phá trải nghiệm lái mới với động cơ 1.5L và hộp số vô cấp CVT sản sinh công suất cực
+                đại
+                112Hp và Momen xoắn cực đại 150Nm. Kỹ thuật mới đã được cải tiến để tăng cường khoảng sáng gầm xe và
+                kích
+                thước thân xe, mang đến sức sống mạnh mẽ và phong cách thể thao cho chiếc MG5. Vô lăng 3 chế độ trợ lực
+                lái
+                và bảng điều khiển được thiết kế sao cho phù hợp nhất để người lái được trải nghiệm trọn vẹn cảm giác
+                lái
+                thể thao đích thực.</p>
         </div>
     </div>
     <div id="sec7">
@@ -182,17 +187,34 @@
                 </label>
             </form>
             <a href="#footer-content"><button class="rec-btn">Liên hệ ngay</button></a>
-            
+
         </div>
-        
+
     </div>
 </div>
 <script>
     let img = document.getElementById("main-img");
     let arrImg = ['url(/_assets/main-img1.png)', 'url(/_assets/main-img2.png)', 'url(/_assets/main-img3.png)', 'url(/_assets/main-img4.png)'];
     setInterval(function () {
-        let i  = Math.floor(Math.random() * 3);
-        img.style.backgroundImage = arrImg[i]; 
-        
+        let i = Math.floor(Math.random() * 3);
+        img.style.backgroundImage = arrImg[i];
+
     }, 2000);
+
+    let ch = document.getElementById("changeIMG");
+    function changeBlack() {
+        ch.src = "/_assets/image-black.png";
+    }
+    function changeYellow() {
+        ch.src = "/_assets/image-yellow.png";
+    }
+    function changeGray() {
+        ch.src = "/_assets/image-gray.png";
+    }
+    function changeRed() {
+        ch.src = "/_assets/image-red.png";
+    }
+    function changeWhite() {
+        ch.src = "/_assets/image-white.png";
+    }
 </script>
