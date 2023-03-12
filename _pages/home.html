@@ -1,6 +1,7 @@
 <div id="main">
     <div id="main-img"></div>
-    <img id="contact" src="/_assets/banner-liên hệ-position.png" alt="">
+    <a href="#sec7"><img id="contact"  src="/_assets/banner-liên hệ-position.png" alt=""></a>
+    
     <div id="form">
         <div id="form-sec">
             <h2>Đăng ký để nhận những thông tin mới nhất!</h2>
@@ -45,8 +46,8 @@
             <h3 class="para" class="para-title">ĐÂY CÓ PHẢI LÀ CHIẾC XE MÀ BẠN MONG MUỐN ?</h3>
             <p class="para">Chúng tôi luôn cố gắng để đem đến cho quý khách hàng sự hài lòng về sản phẩm của chúng tôi
                 .Liên hệ ngay với chúng tôi để có thêm sự tư vấn và nhiều ưu đãi.</p>
-
-            <button class="rec-btn">Tìm hiểu thêm</button>
+            <a href="#sec3"><button class="rec-btn">Tìm hiểu thêm</button>
+            </a>
 
         </div>
 
@@ -180,8 +181,18 @@
                     <input type="text" name="mes" id="mes" placeholder="Message">
                 </label>
             </form>
-            <button class="rec-btn">Liên hệ ngay</button>
+            <a href="#footer-content"><button class="rec-btn">Liên hệ ngay</button></a>
+            
         </div>
         
     </div>
 </div>
+<script>
+    let img = document.getElementById("main-img");
+    let arrImg = ['url(/_assets/main-img1.png)', 'url(/_assets/main-img2.png)', 'url(/_assets/main-img3.png)', 'url(/_assets/main-img4.png)'];
+    setInterval(function () {
+        let i  = Math.floor(Math.random() * 3);
+        img.style.backgroundImage = arrImg[i]; 
+        
+    }, 2000);
+</script>
