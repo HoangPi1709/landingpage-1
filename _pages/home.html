@@ -33,7 +33,7 @@
     </div>
     <div id="sec2">
         <div id="sec-img">
-            <img id="changeIMG" src="/_assets/image-yellow.png" alt="">
+            <img id="changeIMG" src="/_assets/image-yellow.png" alt="" class="square">
             <ul class="list-circle-btn">
 
                 <li class="circle-btn" onclick="changeYellow()"><a href="#"></a></li>
@@ -43,7 +43,7 @@
                 <li class="circle-btn" onclick="changeBlack()"><a href="#"></a></li>
             </ul>
         </div>
-        <div class="sec-content">
+        <div class="sec-content" >
             <h3 class="para" class="para-title">ĐÂY CÓ PHẢI LÀ CHIẾC XE MÀ BẠN MONG MUỐN ?</h3>
             <p class="para">Chúng tôi luôn cố gắng để đem đến cho quý khách hàng sự hài lòng về sản phẩm của chúng tôi
                 .Liên hệ ngay với chúng tôi để có thêm sự tư vấn và nhiều ưu đãi.</p>
@@ -192,29 +192,5 @@
 
     </div>
 </div>
-<script>
-    let img = document.getElementById("main-img");
-    let arrImg = ['url(/_assets/main-img1.png)', 'url(/_assets/main-img2.png)', 'url(/_assets/main-img3.png)', 'url(/_assets/main-img4.png)'];
-    setInterval(function () {
-        let i = Math.floor(Math.random() * 3);
-        img.style.backgroundImage = arrImg[i];
-
-    }, 2000);
-
-    let ch = document.getElementById("changeIMG");
-    function changeBlack() {
-        ch.src = "/_assets/image-black.png";
-    }
-    function changeYellow() {
-        ch.src = "/_assets/image-yellow.png";
-    }
-    function changeGray() {
-        ch.src = "/_assets/image-gray.png";
-    }
-    function changeRed() {
-        ch.src = "/_assets/image-red.png";
-    }
-    function changeWhite() {
-        ch.src = "/_assets/image-white.png";
-    }
-</script>
+<script src="/jsF/script.js"></script>
+<script src="/jsF/animation.js"></script>
