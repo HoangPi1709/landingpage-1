@@ -255,11 +255,7 @@ align-items: center;
  align-items: center;
  
 }
-.sec3 > img{
-    margin-top: 2em;
-    width: 25em;
-    height: 15em;
-}
+
 #sec31{ background-image: url(/_assets/back1.png); }
 #sec32{ background-image: url(/_assets/back2.png)}
 
@@ -401,7 +397,7 @@ align-items: center;
 .para-title{
     font-weight: 600;
 }
-.sec4-list-img, .sec4-list-img2{
+.sec4-list-img{
     display: flex;
 }
 .sec6-content{

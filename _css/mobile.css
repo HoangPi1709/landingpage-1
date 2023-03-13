@@ -255,7 +255,9 @@ footer>ul {
 .circle-btn:nth-child(5) {
     background-color: rgba(0, 0, 0, 1);
 }
-
+.img1, .img2{
+    display: none;
+}
 .list-circle-btn {
     display: flex;
     margin-bottom: 2em;
