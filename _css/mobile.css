@@ -337,10 +337,7 @@ footer>ul {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-#sec-main>button:hover {
-    width: 4em;
-    height: 2em;
-}
+
 
 #sec4-main>img {
     transform: matrix(-1, 0, 0, 1, 0, 0);
