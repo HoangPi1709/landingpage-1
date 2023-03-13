@@ -111,7 +111,7 @@ footer>ul {
 
 #main-img {
     width: 100%;
-    height: 200px;
+    height: 22em;
     background-image: url(/_assets/main-img1.png);
     background-size: 100% 100%;
     background-size: cover;
@@ -119,6 +119,7 @@ footer>ul {
 }
 
 #form {
+    
     width: 100%;
     height: 280px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -151,7 +152,9 @@ footer>ul {
     width: 8em;
     height: 3em;
 }
-
+.sec6-content{
+    padding-top: 5em;
+}
 #inp {
     height: 2em;
     width: 14em;
@@ -168,7 +171,6 @@ footer>ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/_assets/Rectangle\ 5\ \(1\).png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -176,7 +178,7 @@ footer>ul {
 
 #sec1>h3 {
     padding-top: 2em;
-    color: white;
+    color: black;
 }
 
 .sec3>img {
@@ -193,13 +195,12 @@ footer>ul {
     margin-top: 1em;
     width: 22em;
     height: 15em;
-    background-color: rgba(172, 158, 158, 0.5);
     border-radius: 0.5em;
 }
 
 .sec1>p {
     padding-top: 1em;
-    color: white;
+    color: black;
 }
 
 .sec1>img {
@@ -260,6 +261,8 @@ footer>ul {
 }
 
 .list-circle-btn {
+    transform: translateX(-50%);
+    margin-left: 50%;
     display: flex;
     margin-bottom: 2em;
 }
@@ -267,7 +270,11 @@ footer>ul {
 #sec31 {
     background-image: url(/_assets/back1.png);
 }
-
+#changeIMG{
+    transform: translateX(-50%);
+    margin-left: 50%;
+    width: 80%;
+}
 #sec32 {
     background-image: url(/_assets/back2.png)
 }
@@ -339,14 +346,15 @@ footer>ul {
 #sec6 {
     color: white;
     width: 100%;
-    height: auto;
+    height: 30em;
+
     background-image: url(/_assets/Rectangle\ 21.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #sec6>h3 {
-    padding-top: 4em;
+    margin-top: 4em;
     padding-bottom: 1em;
 }
 
