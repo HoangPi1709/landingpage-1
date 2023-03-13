@@ -139,7 +139,9 @@ align-items: center;
 #sec1  > h3 {
     padding-top: 2em;
 }
-
+.sec3-img{
+    width: 45%;
+}
 .sec1 > img{
     width: 100%;
 }
