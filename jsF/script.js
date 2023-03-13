@@ -26,6 +26,7 @@ let img = document.getElementById("main-img");
 var id = 0;
 var arr = ["/_assets/sec61.png","/_assets/sec62.png","/_assets/sec63.png","/_assets/sec64.png","/_assets/sec65.png","/_assets/sec66.png"];
 var imgs = document.getElementById("sec3-img");
+
 function Pre(){
     id--;
     if(id < 0){
@@ -42,50 +43,50 @@ function Next(){
 }
 
 
-let arrL = ["/_assets/image40.png","/_assets/image41.png","/_assets/image42.png","/_assets/image43.png","/_assets/image44.png","/_assets/image45.png"];
-function reverseArr(arrL, left, right){
-    while (left <= right ) {
-        let tmp = arrL[left];
-        arrL[left] = arrL[right];
-        arrL[right] = tmp;
-        left++;
-        right--;
-    }
-}
-function rotationArr(arrL, k, n){
+var arrL = ["/_assets/image40.png","/_assets/image41.png","/_assets/image42.png","/_assets/image43.png","/_assets/image44.png","/_assets/image45.png"];
+var img0 = document.querySelector(".sec4-img0");
+var img1 = document.querySelector(".sec4-img1");
+var img2 = document.querySelector(".sec4-img2");
+var img3 = document.querySelector(".sec4-img3");
+var img4 = document.querySelector(".sec4-img4");
+var img5 = document.querySelector(".sec4-img5");
 
-    reverseArr(arrL, 0, k-1);
-    reverseArr(arrL, k, n-1);
-    reverseArr(arrL, 0, n-1);
-}
 
 var a = 0;
-var img0 = document.getElementsByClassName("img0");
-var img1 = document.getElementsByClassName("img1");
-var img2 = document.getElementsByClassName("img2");
-rotationArr(arr, a, arrL.length);
+img0.src = arrL[0];
+img1.src = arrL[1];
+img2.src = arrL[2];
+img3.src = arrL[3];
+img4.src = arrL[4];
+img5.src = arrL[5];
 function Pree(){
-    rotationArr(arr, a, arrL.length);
+    
     a--;
+    
     if(a < 0){
         a = arrL.length -1;
     } 
+    let tmp = img0.src;
+    img0.src = img1.src;
+    img1.src = img2.src;
+    img2.src = img3.src;
+    img3.src = img4.src;
+    img4.src = img5.src;
+    img5.src = tmp;
     
-    img0.src = arrL[0];
-    img1.src = arrL[1];
-    img2.src = arrL[2];
 }
 function Nextt(){
-    rotationArr(arr, a, arrL.length);
+
     a++;
+
     if(a > arrL.length -1){
         a = 0;
     } 
-    
-    img0.src = arrL[0];
-    img1.src = arrL[1];
-    img2.src = arrL[2];
+    let tmp = img0.src;
+    img0.src = img1.src;
+    img1.src = img2.src;
+    img2.src = img3.src;
+    img3.src = img4.src;
+    img4.src = img5.src;
+    img5.src = tmp;
 }
-
-
-

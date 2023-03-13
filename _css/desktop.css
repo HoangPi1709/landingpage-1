@@ -400,6 +400,9 @@ align-items: center;
 .sec4-list-img{
     display: flex;
 }
+.sec4-img3, .sec4-img4, .sec4-img5{
+    display: none;
+}
 .sec6-content{
     padding-left: 2em;
     width: 50%;
