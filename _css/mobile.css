@@ -412,20 +412,30 @@ footer>ul {
     height: 4em;
 }
 
-#contact-form-1 {
+#name, #email{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 74%;
+    height: 3em;
+    padding-left: 2em;
+}
+#contact-form{
+    margin-left: 10%;
+}
+#contact-form-1{
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
-
-#contact-form-2 {
-    width: 22em;
-    display: flex;
-}
-
-#mes {
-    margin-left: 2em;
+#contact-form-2{
     width: 100%;
-    height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+#mes{
+    margin-bottom: 4em;
+    width: 80%;
+    height:10em;
 }
 
 .para {
